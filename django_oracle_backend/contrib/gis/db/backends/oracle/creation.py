@@ -5,6 +5,7 @@ class OracleCreation(DjangoOracleCreation):
 
     data_types = DjangoOracleCreation.data_types.copy()
     data_types.update({
+            'AutoField': 'NUMBER(38)',
             'CharField': 'VARCHAR2(%(max_length)s)',
             'CommaSeparatedIntegerField': 'VARCHAR2(%(max_length)s)',
             'FileField': 'VARCHAR2(%(max_length)s)',

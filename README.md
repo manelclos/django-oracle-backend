@@ -53,7 +53,7 @@ class DatabaseWrapper(base.DatabaseWrapper):
 ```
 DATABASES = {
     'default': {
-        'ENGINE': 'oid_engine',
+        'ENGINE': 'custom_oracle_engine',
         'NAME': 'XXX',
         'USER': 'XXX',
         'PASSWORD': 'XXX',
